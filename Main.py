@@ -9,7 +9,7 @@ url = 'https://www.amazon.com/MSI-RTX-3080-LHR-10G/dp/B09FSWGS7L/ref=sr_1_2?crid
 # Request the webpage
 response = Request(url, headers = headers)
 
-#Open and parse the response
+# Open and parse the response
 webpage = urlopen(response).read()
 html = soup(webpage, "html.parser")
 
