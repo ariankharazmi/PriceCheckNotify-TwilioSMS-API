@@ -24,11 +24,13 @@ account_sid = 'ACc566b540ea3b8f8ad5bc161def33b4df'
 auth_token = '2311913d7534328089006e99e50ce054'
 client = Client(account_sid, auth_token)
 
+# Set price threshold for product
+# Set number for Twilio SMS notification
 target_price = 750
 if(price < target_price):
     message = client.messages \
                     .create(
                          body=f"{product} is now below {target_price} at {price}! \n \n {url}",
                          from_='+19785479096',
-                         to='+15133743630'
+                         to='+1---'
                      )
