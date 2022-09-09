@@ -1,1 +1,1 @@
-# PriceCheckNotify
+# PriceCheckNotify (Twilio SMS API)
